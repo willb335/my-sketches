@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   env: { browser: true, node: true },
-  extends: ['react-app', 'airbnb', 'prettier'],
+  extends: ['react-app', 'prettier'],
   plugins: ['prettier'],
   rules: {
     'react/prop-types': 0,

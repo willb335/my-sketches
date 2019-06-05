@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import '@zendeskgarden/react-tables/dist/styles.css';
 import './App.css';
 
 function App() {
