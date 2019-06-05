@@ -1,5 +1,6 @@
 /* ----- Rough Table ------ */
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import {
   Table,
   Caption,
@@ -15,13 +16,13 @@ class RoughTable extends Component {
   render() {
     return (
       <Table>
-        <Caption>Your Unsolved Tickets</Caption>
+        <StyledCaption>Your Songs</StyledCaption>
         <Head>
           <HeaderRow>
-            <HeaderCell width="25%">Subject</HeaderCell>
-            <HeaderCell width="25%">Requester</HeaderCell>
-            <HeaderCell width="25%">Requested</HeaderCell>
-            <HeaderCell width="25%">Type</HeaderCell>
+            <HeaderCell width="25%">Artist</HeaderCell>
+            <HeaderCell width="25%">Song</HeaderCell>
+            <HeaderCell width="25%">Release Date</HeaderCell>
+            <HeaderCell width="25%">Genre</HeaderCell>
           </HeaderRow>
         </Head>
         <Body>
@@ -44,3 +45,13 @@ class RoughTable extends Component {
 }
 
 export default RoughTable;
+
+/* --------------------------- Start Styles --------------------------------- */
+
+const StyledCaption = styled(Caption)`
+  margin: 10px;
+  font-weight: bold;
+  color: purple;
+`;
+
+/* --------------------------- End Styles --------------------------------- */
