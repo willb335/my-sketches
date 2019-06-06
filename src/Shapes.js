@@ -40,7 +40,11 @@ class Shape extends Component {
       <div style={{ position: 'absolute' }}>
         <canvas
           ref={ref => (this.canvasRef = ref)}
-          style={{ border: `5px solid red` }}
+          style={{
+            border: `5px solid #fff`,
+            borderRadius: 10,
+            padding: 20
+          }}
           width="500"
           height="500"
         />
