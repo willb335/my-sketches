@@ -2,28 +2,27 @@ import React, { Component } from 'react';
 import rough from 'roughjs/dist/rough.umd';
 
 class Shape extends Component {
-  generateShape = type => {
+  generateShape = (type, specs) => {
     const rc = rough.canvas(this.canvasRef);
 
     switch (type) {
       case 'rectangle':
-        rc.rectangle(10, 10, 100, 100, {
-          fill: '#ff0065',
-          fillStyle: 'solid' // solid fill
-        });
+        rc.rectangle(
+          specs.x,
+          specs.y,
+          specs.height,
+          specs.width,
+          specs.options
+        );
         break;
       case 'elipse':
-        rc.ellipse(50, 50, 100, 100);
+        rc.ellipse(specs.x, specs.y, specs.height, specs.width, specs.options);
         break;
       case 'circle':
-        rc.circle(80, 120, 50, {
-          fill: 'green',
-          hachureAngle: 60, // angle of hachure,
-          hachureGap: 2
-        }); // centerX, centerY, diameter
+        rc.circle(specs.centerX, specs.centerY, specs.diameter, specs.options);
         break;
       case 'line':
-        rc.line(80, 120, 300, 100); // x1, y1, x2, y2
+        rc.line(specs.x1, specs.y1, specs.x2, specs.y2, specs.options);
         break;
       default:
         console.log('No shape of that type');
@@ -32,14 +31,19 @@ class Shape extends Component {
 
   componentDidMount() {
     console.log('rough', rough);
-    const { type } = this.props;
-    this.generateShape(type);
+    const { type, specs } = this.props;
+    this.generateShape(type, specs);
   }
 
   render() {
     return (
-      <div style={{ position: 'absolute', right: '-250px' }}>
-        <canvas ref={ref => (this.canvasRef = ref)} width="500" height="500" />
+      <div style={{ position: 'absolute' }}>
+        <canvas
+          ref={ref => (this.canvasRef = ref)}
+          style={{ border: `5px solid red` }}
+          width="500"
+          height="500"
+        />
       </div>
     );
   }
