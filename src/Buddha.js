@@ -7,8 +7,8 @@ class Buddha extends React.Component {
     console.log('rough', rough);
     const rc = rough.svg(this.buddhaRef);
 
-    const node1 = rc.path(node1Path, { stroke: 'pink' });
-    const node2 = rc.path(node2Path, { stroke: 'purple' });
+    const node1 = rc.path(node1Path, { stroke: 'pink', strokeWidth: 3, roughness: 5, bowing: 5 });
+    const node2 = rc.path(node2Path, { stroke: 'purple', strokeWidth: 1.5, roughness: .5, bowing: 5 });
 
     this.buddhaRef.appendChild(node1);
     this.buddhaRef.appendChild(node2);
