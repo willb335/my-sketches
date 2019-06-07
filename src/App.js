@@ -24,9 +24,9 @@ const Container = styled.div`
   background-color: white;
   font-family: 'Mali', cursive;
   font-size: 30px;
-  font-weight: bold;
   color: black;
   width: 100vw;
+  height: 100vh;
   background-color: skyblue;
 `;
 
