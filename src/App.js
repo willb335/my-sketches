@@ -2,15 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Buddha from './Buddha';
 
-import '@zendeskgarden/react-tables/dist/styles.css';
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <div>Shapes and Stuff, check back</div>
+    <Container>
+      <div>Rough SVG's</div>
       <Buddha />
-    </div>
+    </Container>
   );
 }
 
@@ -18,12 +17,17 @@ export default App;
 
 /* --------------------------- Start Styles --------------------------------- */
 
-const ShapesContainer = styled.div`
+const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  font-family: 'Mali', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
   width: 100vw;
-  height: 100vh;
+  background-color: skyblue;
 `;
 
 /* --------------------------- End Styles ----------------------------------- */
