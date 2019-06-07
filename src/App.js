@@ -7,7 +7,6 @@ import Buddha from './Buddha';
 function App() {
   return (
     <Container>
-      <div>Rough SVG's</div>
       <Buddha />
     </Container>
   );
