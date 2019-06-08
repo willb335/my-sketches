@@ -7,10 +7,10 @@ class Buddha extends React.Component {
     console.log('rough', rough);
     const rc = rough.svg(this.buddhaRef);
 
-    const node1 = rc.path(node1Path, { stroke: 'blueviolet', strokeWidth: 4, roughness: .5, bowing: 3 });
-    const node2 = rc.path(node2Path, { stroke: 'black', strokeWidth: 2, roughness: 0, bowing: 2 });
+    const node1 = rc.path(node1Path, { stroke: 'blueviolet', strokeWidth: 4, roughness: 0, bowing: 10 });
+    const node2 = rc.path(node2Path, { stroke: 'white', strokeWidth: 2, roughness: 0, bowing: 2 });
     const node3 = rc.path(node3Path, { stroke: 'blueviolet', strokeWidth: 1, roughness: 0, bowing: 0 });
-    const node4 = rc.path(node4Path, { stroke: 'orangered', strokeWidth: .5, roughness: 0, bowing: 2 });
+    // const node4 = rc.path(node4Path, { stroke: 'orangered', strokeWidth: .5, roughness: 0, bowing: 2 });
     const node5 = rc.path(node5Path, { stroke: 'red', strokeWidth: .5, roughness: 0, bowing: 2 });
 
 
@@ -19,7 +19,7 @@ class Buddha extends React.Component {
     this.buddhaRef.appendChild(node1);
     this.buddhaRef.appendChild(node2);
     this.buddhaRef.appendChild(node3);
-    this.buddhaRef.appendChild(node4);
+    // this.buddhaRef.appendChild(node4);
     this.buddhaRef.appendChild(node5);
 
 
