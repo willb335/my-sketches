@@ -7,11 +7,11 @@ class Buddha extends React.Component {
     console.log('rough', rough);
     const rc = rough.svg(this.buddhaRef);
 
-    const node1 = rc.path(node1Path, { stroke: 'blueviolet', strokeWidth: 3, roughness: .5, bowing: 0 });
-    const node2 = rc.path(node2Path, { stroke: 'purple', strokeWidth: 1.5, roughness: .5, bowing: 5 });
-    const node3 = rc.path(node3Path, { stroke: 'blue', strokeWidth: 1.5, roughness: .5, bowing: 5 });
-    const node4 = rc.path(node4Path, { stroke: 'orange', strokeWidth: .5, roughness: .5, bowing: 2 });
-    const node5 = rc.path(node5Path, { stroke: 'black', strokeWidth: .5, roughness: .5, bowing: 2 });
+    const node1 = rc.path(node1Path, { stroke: 'blueviolet', strokeWidth: 4, roughness: .5, bowing: 3 });
+    const node2 = rc.path(node2Path, { stroke: 'black', strokeWidth: 2, roughness: 0, bowing: 2 });
+    const node3 = rc.path(node3Path, { stroke: 'blueviolet', strokeWidth: 1, roughness: 0, bowing: 0 });
+    const node4 = rc.path(node4Path, { stroke: 'orangered', strokeWidth: .5, roughness: 0, bowing: 2 });
+    const node5 = rc.path(node5Path, { stroke: 'red', strokeWidth: .5, roughness: 0, bowing: 2 });
 
 
 
