@@ -26,7 +26,7 @@ const Container = styled.div`
   color: black;
   width: 100vw;
   height: 100vh;
-  background-color: skyblue;
+  background-color: lightskyblue;
 `;
 
 /* --------------------------- End Styles ----------------------------------- */
