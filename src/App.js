@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Buddha from './Buddha';
+import Buddha from './Buddha2';
 import HandlebarPanel from './HandlebarPanel';
 
 function App() {
   return (
     <Container>
-      {/* <Buddha /> */}
-      <HandlebarPanel />
+      <Buddha />
+      {/* <HandlebarPanel /> */}
     </Container>
   );
 }
