@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Buddha2 from './Buddha2';
-import Buddha1 from './Buddha';
+import Buddha from './Buddha';
+import BuddhaLotus from './BuddhaLotus';
 import { Spring } from 'react-spring/renderprops';
-
-import HandlebarPanel from './HandlebarPanel';
 
 function App() {
   return (
@@ -12,8 +10,8 @@ function App() {
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
         {props => (
           <>
-            <Buddha1 styles={props} />
-            <Buddha2 styles={props} />
+            <Buddha styles={props} />
+            <BuddhaLotus styles={props} />
           </>
         )}
       </Spring>
