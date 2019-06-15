@@ -25,7 +25,14 @@ class Buddha extends React.Component {
   }
 
   render() {
-    return <svg ref={ref => (this.buddhaRef = ref)} height="500" width="500" />;
+    return (
+      <svg
+        ref={ref => (this.buddhaRef = ref)}
+        style={this.props.styles}
+        height="500"
+        width="500"
+      />
+    );
   }
 }
 
