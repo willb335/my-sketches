@@ -10,8 +10,8 @@ function App() {
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
         {props => (
           <>
-            <Buddha styles={props} />
             <BuddhaLotus styles={props} />
+            <Buddha styles={props} />
           </>
         )}
       </Spring>
