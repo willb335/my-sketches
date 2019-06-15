@@ -8,7 +8,10 @@ import { Spring } from 'react-spring/renderprops';
 function App() {
   return (
     <Container>
-      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+      <Spring
+        from={{ opacity: 0, transform: 'scale(0.7)' }}
+        to={{ opacity: 1, transform: 'scale(0.45)' }}
+      >
         {props => (
           <>
             <BuddhaLotus styles={props} size={{ height: 500, width: 500 }} />
