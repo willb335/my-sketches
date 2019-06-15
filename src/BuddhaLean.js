@@ -29,8 +29,8 @@ class Buddha extends React.Component {
       <svg
         ref={ref => (this.buddhaRef = ref)}
         style={this.props.styles}
-        height="500"
-        width="500"
+        height={this.props.size.height}
+        width={this.props.size.width}
       />
     );
   }
