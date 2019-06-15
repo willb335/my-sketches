@@ -13,7 +13,7 @@ function App() {
           <>
             <BuddhaLotus styles={props} size={{ height: 500, width: 500 }} />
             <Buddha styles={props} size={{ height: 500, width: 500 }} />
-            <BuddhaLean styles={props} size={{ height: 200, width: 200 }} />
+            <BuddhaLean styles={props} size={{ height: 500, width: 500 }} />
           </>
         )}
       </Spring>
