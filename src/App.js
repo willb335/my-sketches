@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Buddha from './Buddha';
 import BuddhaLotus from './BuddhaLotus';
+import BuddhaLean from './BuddhaLean'
 import { Spring } from 'react-spring/renderprops';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <>
             <BuddhaLotus styles={props} />
             <Buddha styles={props} />
+            <BuddhaLean styles={props} />
           </>
         )}
       </Spring>
