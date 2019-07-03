@@ -9,8 +9,8 @@ function App() {
   return (
     <Container>
       <Spring
-        from={{ opacity: 0, transform: 'scale(0.7)' }}
-        to={{ opacity: 1, transform: 'scale(0.7)' }}
+        from={{ opacity: 0, transform: 'scale(0.9)' }}
+        to={{ opacity: 1, transform: 'scale(0.9)' }}
       >
         {props => (
           <>
