@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Buddha from './Buddha';
 import BuddhaLotus from './BuddhaLotus';
 import BuddhaLean from './BuddhaLean';
+import GoldLotus from './GoldLotus';
 import { Spring } from 'react-spring/renderprops';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <BuddhaLotus styles={props} size={{ height: 500, width: 500 }} />
             <Buddha styles={props} size={{ height: 500, width: 500 }} />
             <BuddhaLean styles={props} size={{ height: 500, width: 500 }} />
+            <GoldLotus styles={props} size={{ height: 500, width: 500 }} />
           </>
         )}
       </Spring>
